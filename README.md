@@ -1,18 +1,16 @@
 
-# ETL Scripts for Data Warehouse
+Scripts ETL para Data Warehouse
 
-This repository contains the necessary SQL scripts for cleaning and loading dimensions into a Data Warehouse.
+Este repositorio contiene los scripts SQL necesarios para la limpieza y carga de dimensiones en un Data Warehouse.
 
-## Scripts
+Scripts
+01_clean_tables.sql: Script para limpiar las tablas de destino utilizando comandos TRUNCATE.
+02_load_DimCustomers.sql: Script para cargar datos en la tabla DimCustomers.
+02_load_DimEmployee.sql: Script para cargar datos en la tabla DimEmployee.
+02_load_DimShippers.sql: Script para cargar datos en la tabla DimShippers.
+02_load_DimCategory.sql: Script para cargar datos en la tabla DimCategory.
+02_load_DimProduct.sql: Script para cargar datos en la tabla DimProduct.
 
-1. `01_clean_tables.sql`: Script to clean the target tables using TRUNCATE commands.
-2. `02_load_DimCustomers.sql`: Script to load data into the DimCustomers table.
-3. `02_load_DimEmployee.sql`: Script to load data into the DimEmployee table.
-4. `02_load_DimShippers.sql`: Script to load data into the DimShippers table.
-5. `02_load_DimCategory.sql`: Script to load data into the DimCategory table.
-6. `02_load_DimProduct.sql`: Script to load data into the DimProduct table.
-
-## Usage
-
-1. Execute `01_clean_tables.sql` to ensure the target tables are empty.
-2. Run the load scripts (`02_load_*.sql`) to populate the dimensions with data from the source tables.
+Uso
+Ejecuta 01_clean_tables.sql para asegurar que las tablas de destino estén vacías.
+Ejecuta los scripts de carga (02_load_*.sql) para llenar las dimensiones con datos provenientes de las tablas fuente.
